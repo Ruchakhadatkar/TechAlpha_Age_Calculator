@@ -64,19 +64,22 @@
 }
 #result {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 #result span {
-  font-weight: 600;
+  font-weight: 700;
   /* font-size: 24px; */
+  background-color: #1f487e;
 }
 
-
 @media screen and (max-width: 768px) {
-    .input-container{
-        width: 70%;
-    }
-    .container{
-        height: 100%;
-    }
+  .input-container {
+    width: 70%;
   }
+  .container {
+    height: 100%;
+  }
+  #result {
+    font-size: 20px;
+  }
+}
