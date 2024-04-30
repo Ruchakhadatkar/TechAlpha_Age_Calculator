@@ -7,29 +7,33 @@
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #4203a9, #90bafc);
+  /* background: linear-gradient(135deg, #5465ff, #788bff); */
+  background: linear-gradient(135deg, #1f487e, #006494);
+
   color: #ffffff;
   padding: 10px;
   text-align: center;
 }
 .calculator {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 40px;
 }
 .heading h1 {
   font-size: 50px;
   margin-bottom: 40px;
+  margin-top: 110px;
   /* text-transform: uppercase; */
 }
 .input-container {
-  margin: 40px 0px;
+  margin: 90px auto;
   padding: 35px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: white;
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 42%;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .input-container input {
   flex: 1;
@@ -39,20 +43,40 @@
   font-size: 18px;
   border-radius: 5px;
   position: relative;
+  background-color: #085fb6;
+  margin-right: 20px;
+  color: white;
+  font-weight: 600;
 }
 .input-container button {
-  background: #ffff76;
+  background-color: #085fb6;
   border: 0;
   outline: 0;
-  padding: 15px 30px;
-  font-weight: 500;
+  /* padding: 15px 30px; */
+  font-weight: 600;
   border-radius: 5px;
-  color: #333333;
+  color: white;
   cursor: pointer;
+  height: 48px;
+  width: 122px;
+  font-size: 18px;
+  text-align: center;
 }
-#result{
-    font-size: 28px;
+#result {
+  font-size: 24px;
+  font-weight: 400;
 }
-#result span{
-    color: blue;
+#result span {
+  font-weight: 600;
+  /* font-size: 24px; */
 }
+
+
+@media screen and (max-width: 768px) {
+    .input-container{
+        width: 70%;
+    }
+    .container{
+        height: 100%;
+    }
+  }
